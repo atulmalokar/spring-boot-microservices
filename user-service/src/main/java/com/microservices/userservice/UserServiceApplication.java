@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
+//eureka client which helps to register services into services registry
 @EnableEurekaClient
 public class UserServiceApplication {
 
@@ -17,6 +18,7 @@ public class UserServiceApplication {
 	
 	//creating rest template method
 	@Bean
+	//loadbalancing the services
 	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
