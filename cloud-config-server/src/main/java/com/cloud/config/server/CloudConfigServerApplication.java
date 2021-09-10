@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+//cloud server where we keep all our common configuration on git
 @SpringBootApplication
 @EnableEurekaClient
 @EnableConfigServer
